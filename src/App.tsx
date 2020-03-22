@@ -1,39 +1,61 @@
-import React, { useState } from 'react'
+import React, { useState, ReactElement, FC } from 'react'
 import { Header } from './Header'
 
 const Title = () => (
   <h2 className='text-2xl my-4'>COVID-19 Information & Resources</h2>
 )
 
-const DefinitionContainer = (props: any) => <section>{props.children}</section>
+const DefinitionContainer = (props: any) => (
+  <section className=''>{props.children}</section>
+)
+const DefinitionDescription = (props: any) => (
+  <article className='p-4'>{props.children}</article>
+)
 
-const DefinitionOverview = () => (
+const DefinitionBase: FC<{ main: ReactElement; secondary: ReactElement }> = ({
+  main,
+  secondary
+}) => (
   <DefinitionContainer>
-    <article>
-      <p>
+    <DefinitionDescription>{main}</DefinitionDescription>
+    <hr className="mx-4" />
+    <DefinitionDescription>{secondary}</DefinitionDescription>
+  </DefinitionContainer>
+)
+
+const DefinitionParagraph = (props: any) => (
+  <p className='py-1 text-sm text-gray-800'>{props.children}</p>
+)
+
+const DefinitionOverview = () => {
+  const main = (
+    <>
+      <DefinitionParagraph>
         Coronavirus disease (COVID-19) is an infectious disease caused by a new
         virus.
-      </p>
-      <p>
+      </DefinitionParagraph>
+      <DefinitionParagraph>
         The disease causes respiratory illness (like the flu) with symptoms such
         as a cough, fever, and in more severe cases, difficulty breathing. You
         can protect yourself by washing your hands frequently, avoiding touching
         your face, and avoiding close contact (1 meter or 3 feet) with people
         who are unwell.
-      </p>
-    </article>
-    <hr />
-    <article>
-      <h4>How it spreads</h4>
-      <p>
+      </DefinitionParagraph>
+    </>
+  )
+  const secondary = (
+    <>
+      <DefinitionParagraph>How it spreads</DefinitionParagraph>
+      <DefinitionParagraph>
         Coronavirus disease spreads primarily through contact with an infected
         person when they cough or sneeze. It also spreads when a person touches
         a surface or object that has the virus on it, then touches their eyes,
         nose, or mouth.
-      </p>
-    </article>
-  </DefinitionContainer>
-)
+      </DefinitionParagraph>
+    </>
+  )
+  return <DefinitionBase main={main} secondary={secondary} />
+}
 const DefinitionSymptoms = () => <section>DefinitionSymptoms</section>
 const DefinitionPrevention = () => <section>DefinitionPrevention</section>
 const DefinitionTreatment = () => <section>DefinitionTreatment</section>
