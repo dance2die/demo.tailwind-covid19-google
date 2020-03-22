@@ -74,7 +74,7 @@ const Definition = () => {
         </div>
         <nav className='px-4'>
           {/* prettier-ignore */}
-          <ul className="flex">
+          <ul className="flex overflow-x-scroll">
             <li className="uppercase text-pink-900 text-sm pb-2 mr-4 border-b-4 border-pink-900 tracking-wider font-semibold" data-name="overview">overview</li>
             <li className="uppercase text-pink-900 text-sm pb-2 mr-4 border-b-4 border-pink-900 tracking-wider font-semibold" data-name="symptoms">symptoms</li>
             <li className="uppercase text-pink-900 text-sm pb-2 mr-4 border-b-4 border-pink-900 tracking-wider font-semibold" data-name="prevention">prevention</li>
