@@ -79,10 +79,10 @@ const HealthInfo = () => (
           <h4 className="font-thin text-sm">{item.subtitle}</h4>
           <ul className="mt-2">
             <li className="inline-block">
-              <a className="hover:bg-blue-100 px-2 py-1 mt-1 font-semibold" href={item.url}>{item.hostname}</a>
+              <a className="hover:bg-blue-100 px-2 py-1 mt-1 font-semibold" href={item.url}>🌎 {item.hostname}</a>
             </li>
             <li className="inline-block ml-4">
-              <a className="hover:bg-blue-100 px-2 py-1 mt-1 font-semibold" href={item.url}>{item.hostname}{" "}<span className="text-gray-600">(cached)</span>
+              <a className="hover:bg-blue-100 px-2 py-1 mt-1 font-semibold" href={item.url}>🌎 {item.hostname}{" "}<span className="text-gray-600">(cached)</span>
               </a>
             </li>
           </ul>
