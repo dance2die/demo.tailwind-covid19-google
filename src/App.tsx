@@ -6,6 +6,17 @@ const Title = () => (
   <h2 className='text-2xl my-4'>COVID-19 Information & Resources</h2>
 )
 
+const HealthInfo = () => (
+  <section className='mt-4 border rounded-lg'>
+    <header className='flex items-baseline p-4'>
+      <h3 className='inline-block text-lg mr-4'>Health & Information</h3>
+      <p className='bg-red-600 text-white text-xs py-1 px-2 rounded-md flex items-center'>
+        ⚠ COVID-19 Alert
+      </p>
+    </header>
+  </section>
+)
+
 function App() {
   return (
     <div className=''>
@@ -14,6 +25,8 @@ function App() {
         <Title />
 
         <Definition />
+
+        <HealthInfo />
       </main>
     </div>
   )
