@@ -67,7 +67,7 @@ const Definition = () => {
     <section className='w-full border rounded-lg overflow-hidden'>
       <article className='border-b bg-pink-100'>
         <div className='p-4'>
-          <h3 className='text-lg'>Coronavirus disease (COVID-19)</h3>
+          <h3 className='text-lg font-semibold'>Coronavirus disease (COVID-19)</h3>
           <p className='text-sm'>
             Also called: 2019-nCov, 2019 Novel Coronavirus
           </p>
@@ -75,10 +75,10 @@ const Definition = () => {
         <nav className='px-4'>
           {/* prettier-ignore */}
           <ul className="flex">
-            <li className="uppercase text-pink-900 text-sm font-semibold pb-2 mr-4 border-b-4 border-pink-900" data-name="overview">overview</li>
-            <li className="uppercase text-pink-900 text-sm font-semibold pb-2 mr-4 border-b-4 border-pink-900" data-name="symptoms">symptoms</li>
-            <li className="uppercase text-pink-900 text-sm font-semibold pb-2 mr-4 border-b-4 border-pink-900" data-name="prevention">prevention</li>
-            <li className="uppercase text-pink-900 text-sm font-semibold pb-2 mr-4 border-b-4 border-pink-900" data-name="treatment">treatment</li>
+            <li className="uppercase text-pink-900 text-sm pb-2 mr-4 border-b-4 border-pink-900 tracking-wider font-semibold" data-name="overview">overview</li>
+            <li className="uppercase text-pink-900 text-sm pb-2 mr-4 border-b-4 border-pink-900 tracking-wider font-semibold" data-name="symptoms">symptoms</li>
+            <li className="uppercase text-pink-900 text-sm pb-2 mr-4 border-b-4 border-pink-900 tracking-wider font-semibold" data-name="prevention">prevention</li>
+            <li className="uppercase text-pink-900 text-sm pb-2 mr-4 border-b-4 border-pink-900 tracking-wider font-semibold" data-name="treatment">treatment</li>
           </ul>
         </nav>
       </article>
@@ -96,7 +96,7 @@ function App() {
   return (
     <div className=''>
       <Header />
-      <main className='mx-4'>
+      <main className='mx-8'>
         <Title />
 
         <Definition />
