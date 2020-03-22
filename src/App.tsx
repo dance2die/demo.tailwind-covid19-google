@@ -147,11 +147,19 @@ const Definition = () => {
         </div>
         <nav className='px-4'>
           {/* prettier-ignore */}
-          <ul className="flex overflow-x-scroll">
-            <li className="uppercase text-pink-900 text-sm pb-2 mr-4 border-b-4 border-pink-900 tracking-wider font-semibold" data-name="overview">overview</li>
-            <li className="uppercase text-pink-900 text-sm pb-2 mr-4 border-b-4 border-pink-900 tracking-wider font-semibold" data-name="symptoms">symptoms</li>
-            <li className="uppercase text-pink-900 text-sm pb-2 mr-4 border-b-4 border-pink-900 tracking-wider font-semibold" data-name="prevention">prevention</li>
-            <li className="uppercase text-pink-900 text-sm pb-2 mr-4 border-b-4 border-pink-900 tracking-wider font-semibold" data-name="treatment">treatment</li>
+          <ul className="flex overflow-x-hidden">
+            <li className={`uppercase text-pink-900 text-sm pb-2 mr-4 tracking-wider font-semibold ${selectedContent === "overview" && "border-b-4 border-pink-900"}`}>
+              <a href="#" onClick={() => setSelectedContent("overview")}>overview</a>
+            </li>
+            <li className={`uppercase text-pink-900 text-sm pb-2 mr-4 tracking-wider font-semibold ${selectedContent === "symptoms" && "border-b-4 border-pink-900"}`}>
+              <a href="#" onClick={() => setSelectedContent("symptoms")}>symptoms</a>
+            </li>
+            <li className={`uppercase text-pink-900 text-sm pb-2 mr-4 tracking-wider font-semibold ${selectedContent === "prevention" && "border-b-4 border-pink-900"}`}>
+              <a href="#" onClick={() => setSelectedContent("prevention")}>prevention</a>
+            </li>
+            <li className={`uppercase text-pink-900 text-sm pb-2 mr-4 tracking-wider font-semibold ${selectedContent === "treatment" && "border-b-4 border-pink-900"}`}>
+              <a href="#" onClick={() => setSelectedContent("treatment")}>treatment</a>
+            </li>
           </ul>
         </nav>
       </article>
