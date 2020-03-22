@@ -171,7 +171,7 @@ const Definition = () => {
       </article>
       <article className='border-t border-b'>
         <a
-          className='h-20 w-full pl-4 flex items-center hover:bg-blue-100'
+          className='h-16 w-full pl-4 flex items-center hover:bg-blue-100'
           href='https://who.int/'
           target='_blank'
           rel='noopener noreferrer'
