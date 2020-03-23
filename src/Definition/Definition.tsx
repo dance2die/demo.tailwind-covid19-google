@@ -51,7 +51,10 @@ const DefinitionSymptoms = () => {
     <>
       <DefinitionParagraph>People may experience:</DefinitionParagraph>
       <DefinitionParagraph>
-        • cough • fever • tiredness • difficulty breathing (severe cases)
+        <p>• cough</p>
+        <p>• fever</p>
+        <p>• tiredness</p>
+        <p>• difficulty breathing (severe cases)</p>
       </DefinitionParagraph>
     </>
   )
