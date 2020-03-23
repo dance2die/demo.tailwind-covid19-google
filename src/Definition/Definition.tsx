@@ -74,12 +74,13 @@ const DefinitionPrevention = () => {
         You can protect yourself and help prevent spreading the virus to others
         if you:
       </DefinitionParagraph>
+      {/* prettier-ignore */}
       <DefinitionParagraph>
-        Do • Wash your hands regularly for 20 seconds, with soap and water or
-        alcohol-based hand rub • Cover your nose and mouth with a disposable
-        tissue or flexed elbow when you cough or sneeze • Avoid close contact (1
-        meter or 3 feet) with people who are unwell • Stay home and self-isolate
-        from others in the household if you feel unwell
+        Do
+        <p>• Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub</p>
+        <p>• Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze</p>
+        <p>• Avoid close contact (1 meter or 3 feet) with people who are unwell </p>
+        <p>• Stay home and self-isolate from others in the household if you feel unwell</p>
       </DefinitionParagraph>
       <DefinitionParagraph>
         Don't • Touch your eyes, nose, or mouth if your hands are not clean
@@ -154,7 +155,7 @@ const Definition = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <GlobeIcon fillColor="text-blue-600" />
+          <GlobeIcon fillColor='text-blue-600' />
           <span className='font-semibold text-xl'>Learn more on who.int</span>
         </a>
       </article>
