@@ -155,8 +155,8 @@ const Definition = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <GlobeIcon fillColor='text-blue-600' />
-          <span className='font-semibold text-xl'>Learn more on who.int</span>
+          <span className="mr-1"><GlobeIcon fillColor='text-blue-600' /></span>
+          <span className='font-semibold text-lg'>Learn more on who.int</span>
         </a>
       </article>
       <article className='p-4 leading-tight'>
