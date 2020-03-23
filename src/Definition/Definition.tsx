@@ -159,19 +159,19 @@ const Definition = () => {
           <span className='font-semibold text-xl'>Learn more on who.int</span>
         </a>
       </article>
-      <article className='p-4'>
+      <article className='p-4 leading-tight'>
         <DefinitionParagraph>
-          For information purposes only.
+          <span className="text-xs">For information purposes only.</span>
         </DefinitionParagraph>
         <DefinitionParagraph>
-          Consult your local medical authority for advice.
+          <span className="text-xs">Consult your local medical authority for advice.</span>
         </DefinitionParagraph>
         <DefinitionParagraph>
-          Source: World Health Organization
+          <span className="text-xs">Source: World Health Organization</span>
         </DefinitionParagraph>
         <DefinitionParagraph>
           <a
-            className='text-blue-600 underline hover:bg-blue-100'
+            className='text-xs text-blue-700 underline hover:bg-blue-100'
             href='https://who.int/'
             target='_blank'
             rel='noopener noreferrer'
