@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from './Header'
 import { Definition } from './Definition'
-import HealthInfo from './HealthInfo'
+import { HealthInfo } from './HealthInfo'
 
 const Title = () => (
   <h2 className='text-2xl my-4'>COVID-19 Information & Resources</h2>
