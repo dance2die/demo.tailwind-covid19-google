@@ -69,20 +69,32 @@ const HealthInfo = () => (
     <article className='flex items-baseline p-4 border-b'>
       <h3 className='inline-block text-lg mr-4'>Health & Information</h3>
       <p className='bg-red-600 text-white text-xs py-1 px-2 rounded-md flex items-center'>
-        ⚠ COVID-19 Alert
+        <svg className="fill-current mr-1 w-4 h-4" viewBox='0 0 24 24'>
+          <path d='M12,5.177L20.631,21L3.369,21L12,5.177ZM12,1L0,23L24,23L12,1ZM11,10L13,10L13,16L11,16L11,10ZM12,19.75C11.311,19.75 10.75,19.19 10.75,18.5C10.75,17.81 11.311,17.25 12,17.25C12.689,17.25 13.25,17.81 13.25,18.5C13.25,19.19 12.689,19.75 12,19.75Z' />
+        </svg>
+        <span className="font-semibold">COVID-19 Alert</span>
       </p>
     </article>
     <article>
       {infoList.map((item: HealthInfoItem) => (
-        <section className="border-b p-4" key={item.id}>
-          <h3 className="font-semibold text-md">{item.title}</h3>
-          <h4 className="font-thin text-sm">{item.subtitle}</h4>
-          <ul className="mt-2">
-            <li className="inline-block">
-              <a className="hover:bg-blue-100 px-2 py-1 mt-1 font-semibold" href={item.url}>🌎 {item.hostname}</a>
+        <section className='border-b p-4' key={item.id}>
+          <h3 className='font-semibold text-md'>{item.title}</h3>
+          <h4 className='font-thin text-sm'>{item.subtitle}</h4>
+          <ul className='mt-2'>
+            <li className='inline-block'>
+              <a
+                className='hover:bg-blue-100 px-2 py-1 mt-1 font-semibold'
+                href={item.url}
+              >
+                {item.hostname}
+              </a>
             </li>
-            <li className="inline-block ml-4">
-              <a className="hover:bg-blue-100 px-2 py-1 mt-1 font-semibold" href={item.url}>🌎 {item.hostname}{" "}<span className="text-gray-600">(cached)</span>
+            <li className='inline-block ml-4'>
+              <a
+                className='hover:bg-blue-100 px-2 py-1 mt-1 font-semibold'
+                href={item.url}
+              >
+                {item.hostname} <span className='text-gray-600'>(cached)</span>
               </a>
             </li>
           </ul>
