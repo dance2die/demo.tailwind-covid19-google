@@ -76,19 +76,23 @@ const HealthInfo = () => (
           <h3 className='font-semibold text-md'>{item.title}</h3>
           <h4 className='font-thin text-sm'>{item.subtitle}</h4>
           <ul className='mt-2'>
-            <li className='inline-block'>
+            <li className='inline-block my-2'>
               <a
-                className='hover:bg-blue-100 px-2 py-1 mt-1 font-semibold'
+                className='hover:bg-blue-100 mt-1 font-semibold border rounded-full px-4 py-3'
                 href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <GlobeIcon />
                 {item.hostname}
               </a>
             </li>
-            <li className='inline-block ml-4'>
+            <li className='inline-block ml-4 my-2'>
               <a
-                className='hover:bg-blue-100 px-2 py-1 mt-1 font-semibold'
-                href={item.url}
+                className='hover:bg-blue-100 px-2 py-1 mt-1 font-semibold border rounded-full px-4 py-3'
+                href={item.cachedUrl}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <GlobeIcon />
                 {item.hostname} <span className='text-gray-600'>(cached)</span>
