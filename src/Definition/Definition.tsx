@@ -155,7 +155,7 @@ const Definition = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <span className="mr-1"><GlobeIcon fillColor='text-blue-600' /></span>
+          <span className="mr-1"><GlobeIcon /></span>
           <span className='font-semibold text-lg'>Learn more on who.int</span>
         </a>
       </article>

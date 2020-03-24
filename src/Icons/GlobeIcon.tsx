@@ -4,7 +4,7 @@ export interface GlobeIcon {
   fillColor?: string;
 }
 
-const GlobeIcon: React.FC<GlobeIcon> = ({ fillColor = 'text-red-600' }) => (
+const GlobeIcon: React.FC<GlobeIcon> = ({ fillColor = 'text-blue-600' }) => (
   <svg
     className={`inline-block mr-2 fill-current ${fillColor}`}
     width='24'
