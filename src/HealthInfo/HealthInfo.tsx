@@ -75,10 +75,10 @@ const HealthInfo = () => (
         <section className='border-b p-4' key={item.id}>
           <h3 className='font-semibold text-md'>{item.title}</h3>
           <h4 className='font-thin text-sm'>{item.subtitle}</h4>
-          <ul className='mt-2'>
-            <li className='inline-block my-2'>
+          <ul className='xs:flex xs:flex-col mt-2'>
+            <li className='inline-block mt-4 mb-3 sm:mt-5 sm:mr-4'>
               <a
-                className='hover:bg-blue-100 mt-1 font-semibold border rounded-full px-4 py-3'
+                className='hover:bg-blue-100 font-semibold border rounded-full px-4 py-3'
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -87,9 +87,9 @@ const HealthInfo = () => (
                 {item.hostname}
               </a>
             </li>
-            <li className='inline-block ml-4 my-2'>
+            <li className='inline-block mt-4 mb-3 sm:mt-5 sm:mr-4'>
               <a
-                className='hover:bg-blue-100 px-2 py-1 mt-1 font-semibold border rounded-full px-4 py-3'
+                className='hover:bg-blue-100 px-2 py-1 font-semibold border rounded-full px-4 py-3'
                 href={item.cachedUrl}
                 target="_blank"
                 rel="noopener noreferrer"
