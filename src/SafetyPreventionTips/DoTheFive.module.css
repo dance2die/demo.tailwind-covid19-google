@@ -1,11 +1,14 @@
-ol, ul{
+/* .counter {
   counter-reset: stylized-ol-counter;
+} */
+
+li {
+  counter-increment: stylized-ol-counter;
 }
 
-li::before {
+.counter::before {
   background: #d93025;
   border-radius: 50%;
-  counter-increment: stylized-ol-counter;
   content: counter(stylized-ol-counter) '';
   color: #fff;
   display: inline-block;
