@@ -26,7 +26,7 @@ export interface VideoCard {
   src: string
 }
 const VideoCard: React.FC<VideoCard> = ({ title, subtitle, src }) => (
-  <article className='mt-4 border rounded-lg hover:shadow-2xl'>
+  <article className='mt-4 border rounded-lg overflow-hidden hover:shadow-2xl'>
     <img src={src} alt={title} />
     <div className='p-4'>
       <h3 className="text-lg font-semibold">{title}</h3>
