@@ -49,9 +49,9 @@ const DoTheFive = () => (
 
 function SafetyPreventionTips() {
   return (
-    <section>
-      <header>
-        <h2>SafetyPreventionTips</h2>
+    <section className="mt-20">
+      <header className="my-8 text-center">
+        <h2 className="text-2xl">Safety and prevention tips</h2>
       </header>
       <main>
         <DoTheFive />
