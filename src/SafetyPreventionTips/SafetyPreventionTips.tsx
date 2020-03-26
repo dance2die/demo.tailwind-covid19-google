@@ -39,7 +39,7 @@ const CommonSearch: React.FC<{ title: string; url: string }> = ({
   title,
   url
 }) => (
-  <a href={url} target="_blank" rel="noopener noreferrer">
+  <a href={url} target='_blank' rel='noopener noreferrer'>
     <div className='border rounded-md p-4 mb-4 flex items-center hover:bg-blue-100'>
       <svg
         className='inline-block'
@@ -62,9 +62,11 @@ const CommonSearch: React.FC<{ title: string; url: string }> = ({
 )
 
 const CommonSearchList = () => (
-  <section>
-    <h2>Common searches related to coronavirus (COVID-19)</h2>
-    <ul>
+  <section className='mt-12'>
+    <h2 className='font-semibold text-lg'>
+      Common searches related to coronavirus (COVID-19)
+    </h2>
+    <ul className=" mt-6">
       {searchData.map(data => (
         <li key={data.url}>
           <CommonSearch title={data.title} url={data.url} />
